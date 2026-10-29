@@ -1,0 +1,12 @@
+url=https://www.cynbit.in/contact
+http_code=200
+http_version=1.1
+size_download=11189
+time_namelookup=0.000556
+time_connect=0.000828
+time_appconnect=0.080753
+time_pretransfer=0.080804
+time_starttransfer=1.160497
+time_total=1.209781
+num_redirects=0
+redirect_url=

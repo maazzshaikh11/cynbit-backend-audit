@@ -1,0 +1,12 @@
+url=https://www.cynbit.in/robots.txt
+http_code=200
+http_version=1.1
+size_download=200
+time_namelookup=0.000589
+time_connect=0.000750
+time_appconnect=0.085705
+time_pretransfer=0.085775
+time_starttransfer=0.414452
+time_total=0.414778
+num_redirects=0
+redirect_url=

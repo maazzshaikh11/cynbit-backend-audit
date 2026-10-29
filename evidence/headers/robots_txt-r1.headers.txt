@@ -1,0 +1,19 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Access-Control-Allow-Origin: *
+Age: 0
+Cache-Control: public, max-age=0, must-revalidate
+Content-Disposition: inline; filename="robots.txt"
+X-Vercel-Id: <redacted>
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 29 Oct 2026 21:27:52 GMT
+Etag: "2660121f048542cf7a5e603ba53f72c2"
+Last-Modified: Thu, 29 Oct 2026 21:27:52 GMT
+Server: Vercel
+Strict-Transport-Security: max-age=63072000
+X-Matched-Path: /robots.txt
+X-Vercel-Cache: MISS
+Content-Length: 200
+

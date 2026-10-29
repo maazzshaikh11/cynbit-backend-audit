@@ -1,0 +1,12 @@
+url=https://www.cynbit.in/this-page-does-not-exist-audit-404
+http_code=404
+http_version=1.1
+size_download=4368
+time_namelookup=0.000588
+time_connect=0.000902
+time_appconnect=0.081298
+time_pretransfer=0.081344
+time_starttransfer=0.633945
+time_total=0.675251
+num_redirects=0
+redirect_url=

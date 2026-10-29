@@ -1,0 +1,24 @@
+
+== evidence/bundles/app__marketing__bitelevate_page-e1cc18fdcf688572_js ==
+  size: 90451 bytes
+  framework hints: next.js, react, tailwind, webpack
+  sourceMappingURL: (none)
+  api-like paths: (none)
+  hosts (4): cynbit.in, github.com, schema.org, sdk.cashfree.com
+  urls: 7 total, sample: ['https://cynbit.in', 'https://cynbit.in/bitelevate', 'https://cynbit.in/intern-portal/login', 'https://cynbit.in/logo.png', 'https://github.com/', 'https://schema.org', 'https://sdk.cashfree.com/js/v3/cashfree.js']
+
+== evidence/bundles/app__marketing__contact_page-a581c8d7462124d9_js ==
+  size: 24534 bytes
+  framework hints: webpack
+  sourceMappingURL: (none)
+  api-like paths: (none)
+  hosts (2): cynbit.in, schema.org
+  urls: 2 total, sample: ['https://cynbit.in/contact', 'https://schema.org']
+
+== evidence/bundles/app__marketing__products_page-637d1c81fb1ea500_js ==
+  size: 43981 bytes
+  framework hints: webpack
+  sourceMappingURL: (none)
+  api-like paths: (none)
+  hosts (1): schema.org
+  urls: 1 total, sample: ['https://schema.org']

@@ -1,0 +1,169 @@
+
+== bitelevate-r1.html len=220232 forms=1 inputs=5 textareas=1 selects=2 ==
+  FORM: <form class="space-y-4 sm:space-y-4.5 text-left">
+  INPUT: name=fullName type=?
+  INPUT: name=university type=?
+  INPUT: name=email type=email
+  INPUT: name=phone type=?
+  INPUT: name=referralName type=?
+  scripts (16):
+    /_next/static/chunks/4bd1b696-100b9d70ed4e49c1.js
+    /_next/static/chunks/1255-eae4096fb21f1304.js
+    /_next/static/chunks/main-app-0ee650784ad95c4e.js
+    /_next/static/chunks/2619-04bc32f026a0d946.js
+    /_next/static/chunks/5563-f2fb65d9a5ac2236.js
+    /_next/static/chunks/app/error-8e28947332869732.js
+    /_next/static/chunks/app/not-found-6bdce7b330d1cbd7.js
+    /_next/static/chunks/app/layout-a3be080c948eebc3.js
+    /_next/static/chunks/1356-2ed480e29f4f7933.js
+    /_next/static/chunks/4773-f4ec9607d8ab92ce.js
+    /_next/static/chunks/app/(marketing)/layout-db39ce8334f77a17.js
+    /_next/static/chunks/app/(marketing)/template-a9d572c12d5d324b.js
+    /_next/static/chunks/app/(marketing)/bitelevate/page-e1cc18fdcf688572.js
+    /_next/static/chunks/app/global-error-2ee825408f612079.js
+    /_next/static/chunks/polyfills-42372ed130431b0a.js
+    /_next/static/chunks/webpack-754f00459b705219.js
+  internal links: ['/bitelevate', '/bitelevate/paths', '/blog', '/careers', '/case-studies', '/contact', '/cookies', '/diaries', '/favicon.svg', '/impact', '/logo.svg', '/navigation', '/privacy', '/products', '/services', '/story', '/team', '/terms']
+  external hosts in HTML: ['cynbit.in', 'fonts.googleapis.com', 'github.com', 'www.facebook.com', 'www.googletagmanager.com', 'www.instagram.com', 'www.linkedin.com', 'x.com']
+  contains gtag: 1
+  contains googletagmanager: 1
+  contains mailto:: 1
+
+== careers-r1.html len=125468 forms=0 inputs=0 textareas=0 selects=0 ==
+  scripts (16):
+    /_next/static/chunks/4bd1b696-100b9d70ed4e49c1.js
+    /_next/static/chunks/1255-eae4096fb21f1304.js
+    /_next/static/chunks/main-app-0ee650784ad95c4e.js
+    /_next/static/chunks/2619-04bc32f026a0d946.js
+    /_next/static/chunks/5563-f2fb65d9a5ac2236.js
+    /_next/static/chunks/app/error-8e28947332869732.js
+    /_next/static/chunks/app/not-found-6bdce7b330d1cbd7.js
+    /_next/static/chunks/app/layout-a3be080c948eebc3.js
+    /_next/static/chunks/1356-2ed480e29f4f7933.js
+    /_next/static/chunks/4773-f4ec9607d8ab92ce.js
+    /_next/static/chunks/app/(marketing)/layout-db39ce8334f77a17.js
+    /_next/static/chunks/app/(marketing)/template-a9d572c12d5d324b.js
+    /_next/static/chunks/app/global-error-2ee825408f612079.js
+    /_next/static/chunks/app/(marketing)/careers/page-f771ac25a45fddba.js
+    /_next/static/chunks/polyfills-42372ed130431b0a.js
+    /_next/static/chunks/webpack-754f00459b705219.js
+  internal links: ['/bitelevate', '/bitelevate/paths', '/blog', '/careers', '/careers/ai-engineer', '/careers/ai-ml-engineer-intern', '/careers/backend-developer', '/careers/backend-developer-intern', '/careers/business-development-executive', '/careers/business-development-intern', '/careers/campus-ambassador-campus-relations-intern', '/careers/content-marketing-intern', '/careers/content-strategist', '/careers/devops-cloud-engineer', '/careers/digital-marketing-intern', '/careers/full-stack-developer', '/careers/full-stack-developer-intern', '/careers/growth-manager', '/careers/growth-marketing-intern', '/careers/hr-talent-acquisition-intern', '/careers/marketing-executive', '/careers/qa-testing-intern', '/careers/social-media-brand-intern', '/careers/ui-ux-design-intern', '/case-studies', '/contact', '/cookies', '/diaries', '/favicon.svg', '/impact', '/navigation', '/privacy', '/products', '/services', '/story', '/team', '/terms']
+  external hosts in HTML: ['cynbit.in', 'fonts.googleapis.com', 'www.facebook.com', 'www.googletagmanager.com', 'www.instagram.com', 'www.linkedin.com', 'x.com']
+  contains gtag: 1
+  contains googletagmanager: 1
+  contains mailto:: 1
+
+== contact-r1.html len=64049 forms=1 inputs=4 textareas=1 selects=0 ==
+  FORM: <form class="space-y-6" style="opacity:0">
+  INPUT: name=fullName type=text
+  INPUT: name=email type=email
+  INPUT: name=company type=text
+  INPUT: name=industry type=text
+  scripts (16):
+    /_next/static/chunks/4bd1b696-100b9d70ed4e49c1.js
+    /_next/static/chunks/1255-eae4096fb21f1304.js
+    /_next/static/chunks/main-app-0ee650784ad95c4e.js
+    /_next/static/chunks/2619-04bc32f026a0d946.js
+    /_next/static/chunks/5563-f2fb65d9a5ac2236.js
+    /_next/static/chunks/app/error-8e28947332869732.js
+    /_next/static/chunks/app/not-found-6bdce7b330d1cbd7.js
+    /_next/static/chunks/app/layout-a3be080c948eebc3.js
+    /_next/static/chunks/1356-2ed480e29f4f7933.js
+    /_next/static/chunks/4773-f4ec9607d8ab92ce.js
+    /_next/static/chunks/app/(marketing)/layout-db39ce8334f77a17.js
+    /_next/static/chunks/app/(marketing)/template-a9d572c12d5d324b.js
+    /_next/static/chunks/app/(marketing)/contact/page-a581c8d7462124d9.js
+    /_next/static/chunks/app/global-error-2ee825408f612079.js
+    /_next/static/chunks/polyfills-42372ed130431b0a.js
+    /_next/static/chunks/webpack-754f00459b705219.js
+  internal links: ['/bitelevate', '/bitelevate/paths', '/blog', '/careers', '/case-studies', '/contact', '/cookies', '/diaries', '/favicon.svg', '/impact', '/logo.svg', '/navigation', '/privacy', '/products', '/services', '/story', '/team', '/terms']
+  external hosts in HTML: ['cynbit.in', 'fonts.googleapis.com', 'www.facebook.com', 'www.googletagmanager.com', 'www.instagram.com', 'www.linkedin.com', 'x.com']
+  contains gtag: 1
+  contains googletagmanager: 1
+  contains mailto:: 3
+
+== home-r1.html len=100497 forms=0 inputs=0 textareas=0 selects=0 ==
+  scripts (16):
+    /_next/static/chunks/4bd1b696-100b9d70ed4e49c1.js
+    /_next/static/chunks/1255-eae4096fb21f1304.js
+    /_next/static/chunks/main-app-0ee650784ad95c4e.js
+    /_next/static/chunks/2619-04bc32f026a0d946.js
+    /_next/static/chunks/5563-f2fb65d9a5ac2236.js
+    /_next/static/chunks/app/error-8e28947332869732.js
+    /_next/static/chunks/app/not-found-6bdce7b330d1cbd7.js
+    /_next/static/chunks/app/layout-a3be080c948eebc3.js
+    /_next/static/chunks/1356-2ed480e29f4f7933.js
+    /_next/static/chunks/4773-f4ec9607d8ab92ce.js
+    /_next/static/chunks/app/(marketing)/layout-db39ce8334f77a17.js
+    /_next/static/chunks/app/(marketing)/template-a9d572c12d5d324b.js
+    /_next/static/chunks/app/(marketing)/page-786d2581113641b8.js
+    /_next/static/chunks/app/global-error-2ee825408f612079.js
+    /_next/static/chunks/polyfills-42372ed130431b0a.js
+    /_next/static/chunks/webpack-754f00459b705219.js
+  internal links: ['/bitelevate', '/bitelevate/paths', '/blog', '/blog/ai-agents-business-operations', '/careers', '/case-studies', '/contact', '/cookies', '/diaries', '/favicon.svg', '/impact', '/logo.svg', '/navigation', '/privacy', '/products', '/services', '/story', '/team', '/terms']
+  external hosts in HTML: ['cynbit.in', 'fonts.googleapis.com', 'www.facebook.com', 'www.googletagmanager.com', 'www.instagram.com', 'www.linkedin.com', 'x.com']
+  contains gtag: 1
+  contains googletagmanager: 1
+  contains mailto:: 1
+
+== products-r1.html len=82270 forms=1 inputs=3 textareas=1 selects=0 ==
+  FORM: <form class="space-y-6">
+  INPUT: name=fullName type=?
+  INPUT: name=email type=email
+  INPUT: name=company type=?
+  scripts (16):
+    /_next/static/chunks/4bd1b696-100b9d70ed4e49c1.js
+    /_next/static/chunks/1255-eae4096fb21f1304.js
+    /_next/static/chunks/main-app-0ee650784ad95c4e.js
+    /_next/static/chunks/2619-04bc32f026a0d946.js
+    /_next/static/chunks/5563-f2fb65d9a5ac2236.js
+    /_next/static/chunks/app/error-8e28947332869732.js
+    /_next/static/chunks/app/not-found-6bdce7b330d1cbd7.js
+    /_next/static/chunks/app/layout-a3be080c948eebc3.js
+    /_next/static/chunks/1356-2ed480e29f4f7933.js
+    /_next/static/chunks/4773-f4ec9607d8ab92ce.js
+    /_next/static/chunks/app/(marketing)/layout-db39ce8334f77a17.js
+    /_next/static/chunks/app/(marketing)/template-a9d572c12d5d324b.js
+    /_next/static/chunks/app/(marketing)/products/page-637d1c81fb1ea500.js
+    /_next/static/chunks/app/global-error-2ee825408f612079.js
+    /_next/static/chunks/polyfills-42372ed130431b0a.js
+    /_next/static/chunks/webpack-754f00459b705219.js
+  internal links: ['/bitelevate', '/bitelevate/paths', '/blog', '/blog/ai-first-learning', '/blog/best-automation-tools-2026', '/blog/future-saas-development', '/careers', '/case-studies', '/contact', '/cookies', '/diaries', '/favicon.svg', '/impact', '/logo.svg', '/navigation', '/privacy', '/products', '/services', '/story', '/team', '/terms']
+  external hosts in HTML: ['cynbit.in', 'fonts.googleapis.com', 'www.facebook.com', 'www.googletagmanager.com', 'www.instagram.com', 'www.linkedin.com', 'x.com']
+  contains gtag: 1
+  contains googletagmanager: 1
+  contains mailto:: 1
+
+== robots_txt-r1.html len=200 forms=0 inputs=0 textareas=0 selects=0 ==
+  scripts (0):
+  internal links: []
+  external hosts in HTML: ['cynbit.in']
+
+== services-r1.html len=76228 forms=0 inputs=0 textareas=0 selects=0 ==
+  scripts (16):
+    /_next/static/chunks/4bd1b696-100b9d70ed4e49c1.js
+    /_next/static/chunks/1255-eae4096fb21f1304.js
+    /_next/static/chunks/main-app-0ee650784ad95c4e.js
+    /_next/static/chunks/2619-04bc32f026a0d946.js
+    /_next/static/chunks/5563-f2fb65d9a5ac2236.js
+    /_next/static/chunks/app/error-8e28947332869732.js
+    /_next/static/chunks/app/not-found-6bdce7b330d1cbd7.js
+    /_next/static/chunks/app/layout-a3be080c948eebc3.js
+    /_next/static/chunks/1356-2ed480e29f4f7933.js
+    /_next/static/chunks/4773-f4ec9607d8ab92ce.js
+    /_next/static/chunks/app/(marketing)/layout-db39ce8334f77a17.js
+    /_next/static/chunks/app/(marketing)/template-a9d572c12d5d324b.js
+    /_next/static/chunks/app/(marketing)/services/page-5af223ed01945c67.js
+    /_next/static/chunks/app/global-error-2ee825408f612079.js
+    /_next/static/chunks/polyfills-42372ed130431b0a.js
+    /_next/static/chunks/webpack-754f00459b705219.js
+  internal links: ['/bitelevate', '/bitelevate/paths', '/blog', '/careers', '/case-studies', '/contact', '/cookies', '/diaries', '/favicon.svg', '/impact', '/logo.svg', '/navigation', '/privacy', '/products', '/services', '/story', '/team', '/terms']
+  external hosts in HTML: ['cynbit.in', 'fonts.googleapis.com', 'www.facebook.com', 'www.googletagmanager.com', 'www.instagram.com', 'www.linkedin.com', 'x.com']
+  contains gtag: 1
+  contains googletagmanager: 1
+  contains mailto:: 1
+
+== sitemap_xml-r1.html len=14264 forms=0 inputs=0 textareas=0 selects=0 ==
+  scripts (0):
+  internal links: []
+  external hosts in HTML: ['cynbit.in']

@@ -1,0 +1,690 @@
+
+== bitelevate-r1.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: br
+  access-control-allow-origin: *
+  x-vercel-cache: HIT
+  age: 29414
+  etag: W/"f0c3a6034f0d7346763269875db366af"
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /bitelevate
+  x-nextjs-prerender: 1
+
+== bitelevate-r2.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: br
+  access-control-allow-origin: *
+  x-vercel-cache: HIT
+  age: 29417
+  etag: W/"f0c3a6034f0d7346763269875db366af"
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /bitelevate
+  x-nextjs-prerender: 1
+
+== bitelevate-r3.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: br
+  access-control-allow-origin: *
+  x-vercel-cache: HIT
+  age: 29419
+  etag: W/"f0c3a6034f0d7346763269875db366af"
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /bitelevate
+  x-nextjs-prerender: 1
+
+== careers-r1.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: Next.js
+  content-encoding: br
+  access-control-allow-origin: MISSING
+  x-vercel-cache: MISS
+  age: 0
+  etag: MISSING
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /careers
+  x-nextjs-prerender: MISSING
+
+== careers-r2.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: Next.js
+  content-encoding: br
+  access-control-allow-origin: MISSING
+  x-vercel-cache: MISS
+  age: 0
+  etag: MISSING
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /careers
+  x-nextjs-prerender: MISSING
+
+== careers-r3.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: Next.js
+  content-encoding: br
+  access-control-allow-origin: MISSING
+  x-vercel-cache: MISS
+  age: 0
+  etag: MISSING
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /careers
+  x-nextjs-prerender: MISSING
+
+== contact-r1.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: br
+  access-control-allow-origin: *
+  x-vercel-cache: HIT
+  age: 29641
+  etag: W/"4b1633b04415d0691786330a5b7bd98c"
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /contact
+  x-nextjs-prerender: 1
+
+== contact-r2.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: br
+  access-control-allow-origin: *
+  x-vercel-cache: HIT
+  age: 29644
+  etag: W/"4b1633b04415d0691786330a5b7bd98c"
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /contact
+  x-nextjs-prerender: 1
+
+== contact-r3.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: br
+  access-control-allow-origin: *
+  x-vercel-cache: HIT
+  age: 29646
+  etag: W/"4b1633b04415d0691786330a5b7bd98c"
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /contact
+  x-nextjs-prerender: 1
+
+== home-r1.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: br
+  access-control-allow-origin: *
+  x-vercel-cache: HIT
+  age: 29693
+  etag: W/"babdce9795e4ef3d84461090987852d3"
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /
+  x-nextjs-prerender: 1
+
+== home-r2.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: br
+  access-control-allow-origin: *
+  x-vercel-cache: HIT
+  age: 29695
+  etag: W/"babdce9795e4ef3d84461090987852d3"
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /
+  x-nextjs-prerender: 1
+
+== home-r3.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: br
+  access-control-allow-origin: *
+  x-vercel-cache: HIT
+  age: 29698
+  etag: W/"babdce9795e4ef3d84461090987852d3"
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /
+  x-nextjs-prerender: 1
+
+== not-found-404.headers.txt ==  HTTP/1.1 404 Not Found
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: br
+  access-control-allow-origin: *
+  x-vercel-cache: MISS
+  age: 0
+  etag: W/"fa7fbe530587a530b4fa6a70e39f4d29"
+  vary: MISSING
+  x-matched-path: /404
+  x-nextjs-prerender: MISSING
+
+== products-r1.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: br
+  access-control-allow-origin: *
+  x-vercel-cache: HIT
+  age: 29647
+  etag: W/"b90dfe45745d0290688b1070e3c493b8"
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /products
+  x-nextjs-prerender: 1
+
+== products-r2.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: br
+  access-control-allow-origin: *
+  x-vercel-cache: HIT
+  age: 29650
+  etag: W/"b90dfe45745d0290688b1070e3c493b8"
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /products
+  x-nextjs-prerender: 1
+
+== products-r3.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: br
+  access-control-allow-origin: *
+  x-vercel-cache: HIT
+  age: 29653
+  etag: W/"b90dfe45745d0290688b1070e3c493b8"
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /products
+  x-nextjs-prerender: 1
+
+== redirect-http___cynbit_in_.headers.txt ==  HTTP/1.0 308 Permanent Redirect
+  strict-transport-security: MISSING
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: MISSING
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: MISSING
+  access-control-allow-origin: MISSING
+  x-vercel-cache: MISSING
+  age: MISSING
+  etag: MISSING
+  vary: MISSING
+  x-matched-path: MISSING
+  x-nextjs-prerender: MISSING
+
+== redirect-http___www_cynbit_in_.headers.txt ==  HTTP/1.0 308 Permanent Redirect
+  strict-transport-security: MISSING
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: MISSING
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: MISSING
+  access-control-allow-origin: MISSING
+  x-vercel-cache: MISSING
+  age: MISSING
+  etag: MISSING
+  vary: MISSING
+  x-matched-path: MISSING
+  x-nextjs-prerender: MISSING
+
+== redirect-https___cynbit_in_.headers.txt ==  HTTP/1.1 307 Temporary Redirect
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: MISSING
+  access-control-allow-origin: MISSING
+  x-vercel-cache: MISSING
+  age: MISSING
+  etag: MISSING
+  vary: MISSING
+  x-matched-path: MISSING
+  x-nextjs-prerender: MISSING
+
+== robots_txt-r1.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: MISSING
+  access-control-allow-origin: *
+  x-vercel-cache: MISS
+  age: 0
+  etag: "2660121f048542cf7a5e603ba53f72c2"
+  vary: MISSING
+  x-matched-path: /robots.txt
+  x-nextjs-prerender: MISSING
+
+== robots_txt-r2.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: MISSING
+  access-control-allow-origin: *
+  x-vercel-cache: HIT
+  age: 51
+  etag: "2660121f048542cf7a5e603ba53f72c2"
+  vary: MISSING
+  x-matched-path: /robots.txt
+  x-nextjs-prerender: MISSING
+
+== robots_txt-r3.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: MISSING
+  access-control-allow-origin: *
+  x-vercel-cache: HIT
+  age: 2974
+  etag: "2660121f048542cf7a5e603ba53f72c2"
+  vary: MISSING
+  x-matched-path: /robots.txt
+  x-nextjs-prerender: MISSING
+
+== security-txt.headers.txt ==  HTTP/1.1 404 Not Found
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: MISSING
+  access-control-allow-origin: *
+  x-vercel-cache: HIT
+  age: 3
+  etag: "fa7fbe530587a530b4fa6a70e39f4d29"
+  vary: MISSING
+  x-matched-path: /404
+  x-nextjs-prerender: MISSING
+
+== services-r1.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: br
+  access-control-allow-origin: *
+  x-vercel-cache: HIT
+  age: 29622
+  etag: W/"c23fc90c848362d61a90ee5132fac2b2"
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /services
+  x-nextjs-prerender: 1
+
+== services-r2.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: br
+  access-control-allow-origin: *
+  x-vercel-cache: HIT
+  age: 29625
+  etag: W/"c23fc90c848362d61a90ee5132fac2b2"
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /services
+  x-nextjs-prerender: 1
+
+== services-r3.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: br
+  access-control-allow-origin: *
+  x-vercel-cache: HIT
+  age: 29628
+  etag: W/"c23fc90c848362d61a90ee5132fac2b2"
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /services
+  x-nextjs-prerender: 1
+
+== sitemap_xml-r1.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: br
+  access-control-allow-origin: MISSING
+  x-vercel-cache: MISS
+  age: 0
+  etag: MISSING
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /sitemap.xml
+  x-nextjs-prerender: MISSING
+
+== sitemap_xml-r2.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: br
+  access-control-allow-origin: MISSING
+  x-vercel-cache: MISS
+  age: 0
+  etag: MISSING
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /sitemap.xml
+  x-nextjs-prerender: MISSING
+
+== sitemap_xml-r3.headers.txt ==  HTTP/1.1 200 OK
+  strict-transport-security: max-age=63072000
+  content-security-policy: MISSING
+  x-content-type-options: MISSING
+  x-frame-options: MISSING
+  referrer-policy: MISSING
+  permissions-policy: MISSING
+  cross-origin-opener-policy: MISSING
+  cross-origin-resource-policy: MISSING
+  cross-origin-embedder-policy: MISSING
+  cache-control: public, max-age=0, must-revalidate
+  set-cookie: MISSING
+  server: Vercel
+  x-powered-by: MISSING
+  content-encoding: br
+  access-control-allow-origin: MISSING
+  x-vercel-cache: MISS
+  age: 0
+  etag: MISSING
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  x-matched-path: /sitemap.xml
+  x-nextjs-prerender: MISSING
+
+== Summary (files with header present / total files) ==
+  strict-transport-security: 27/29
+  content-security-policy: 0/29
+  x-content-type-options: 0/29
+  x-frame-options: 0/29
+  referrer-policy: 0/29
+  permissions-policy: 0/29
+  cross-origin-opener-policy: 0/29
+  cross-origin-resource-policy: 0/29
+  cross-origin-embedder-policy: 0/29
+  cache-control: 27/29
+  set-cookie: 0/29
+  server: 29/29
+  x-powered-by: 3/29
+  content-encoding: 22/29
+  access-control-allow-origin: 20/29
+  x-vercel-cache: 26/29
+  age: 26/29
+  etag: 20/29
+  vary: 21/29
+  x-matched-path: 26/29
+  x-nextjs-prerender: 15/29

@@ -81,7 +81,7 @@ def main():
         elif os.path.isdir(directory):
             for root, _dirs, files in os.walk(directory):
                 for name in sorted(files):
-                    if name.endswith((".js", ".css", ".mjs")):
+                    if name.endswith((".js", ".css", ".mjs", "_js")):
                         found.append(os.path.join(root, name))
     if not found:
         print("No JS/CSS files found. Save public bundles first (see docs/01).")

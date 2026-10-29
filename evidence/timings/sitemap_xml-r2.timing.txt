@@ -1,0 +1,12 @@
+url=https://www.cynbit.in/sitemap.xml
+http_code=200
+http_version=1.1
+size_download=1503
+time_namelookup=0.000557
+time_connect=0.000865
+time_appconnect=0.082748
+time_pretransfer=0.082799
+time_starttransfer=0.992152
+time_total=1.032692
+num_redirects=0
+redirect_url=

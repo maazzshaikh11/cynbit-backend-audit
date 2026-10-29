@@ -1,0 +1,18 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 OK
+Age: 0
+Cache-Control: private, no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: br
+Content-Type: text/html; charset=utf-8
+Date: Thu, 29 Oct 2026 21:27:26 GMT
+Link: </_next/static/media/636a5ac981f94f8b-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/8760c4774489e4ba-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </logo.svg>; rel=preload; as="image", </_next/static/css/ab1584e3d32cd2d2.css>; rel=preload; as="style", </_next/static/css/2111bc7b10569bdd.css>; rel=preload; as="style"
+Server: Vercel
+Strict-Transport-Security: max-age=63072000
+Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+X-Matched-Path: /careers
+X-Powered-By: Next.js
+X-Vercel-Cache: MISS
+X-Vercel-Id: <redacted>
+Transfer-Encoding: chunked
+

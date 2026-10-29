@@ -1,0 +1,32 @@
+2026-10-29T21:26:56Z GET (no follow) http://cynbit.in/ -> evidence/headers/redirect-http___cynbit_in_.headers.txt
+2026-10-29T21:26:58Z GET (no follow) http://www.cynbit.in/ -> evidence/headers/redirect-http___www_cynbit_in_.headers.txt
+2026-10-29T21:27:01Z GET (no follow) https://cynbit.in/ -> evidence/headers/redirect-https___cynbit_in_.headers.txt
+2026-10-29T21:27:04Z GET https://www.cynbit.in/ -> evidence/headers/home-r1.headers.txt evidence/html/home-r1.html evidence/timings/home-r1.timing.txt
+2026-10-29T21:27:06Z GET https://www.cynbit.in/ -> evidence/headers/home-r2.headers.txt evidence/html/home-r2.html evidence/timings/home-r2.timing.txt
+2026-10-29T21:27:09Z GET https://www.cynbit.in/ -> evidence/headers/home-r3.headers.txt evidence/html/home-r3.html evidence/timings/home-r3.timing.txt
+2026-10-29T21:27:12Z GET https://www.cynbit.in/contact -> evidence/headers/contact-r1.headers.txt evidence/html/contact-r1.html evidence/timings/contact-r1.timing.txt
+2026-10-29T21:27:14Z GET https://www.cynbit.in/contact -> evidence/headers/contact-r2.headers.txt evidence/html/contact-r2.html evidence/timings/contact-r2.timing.txt
+2026-10-29T21:27:17Z GET https://www.cynbit.in/contact -> evidence/headers/contact-r3.headers.txt evidence/html/contact-r3.html evidence/timings/contact-r3.timing.txt
+2026-10-29T21:27:20Z GET https://www.cynbit.in/careers -> evidence/headers/careers-r1.headers.txt evidence/html/careers-r1.html evidence/timings/careers-r1.timing.txt
+2026-10-29T21:27:23Z GET https://www.cynbit.in/careers -> evidence/headers/careers-r2.headers.txt evidence/html/careers-r2.html evidence/timings/careers-r2.timing.txt
+2026-10-29T21:27:25Z GET https://www.cynbit.in/careers -> evidence/headers/careers-r3.headers.txt evidence/html/careers-r3.html evidence/timings/careers-r3.timing.txt
+2026-10-29T21:27:28Z GET https://www.cynbit.in/services -> evidence/headers/services-r1.headers.txt evidence/html/services-r1.html evidence/timings/services-r1.timing.txt
+2026-10-29T21:27:31Z GET https://www.cynbit.in/services -> evidence/headers/services-r2.headers.txt evidence/html/services-r2.html evidence/timings/services-r2.timing.txt
+2026-10-29T21:27:33Z GET https://www.cynbit.in/services -> evidence/headers/services-r3.headers.txt evidence/html/services-r3.html evidence/timings/services-r3.timing.txt
+2026-10-29T21:27:36Z GET https://www.cynbit.in/products -> evidence/headers/products-r1.headers.txt evidence/html/products-r1.html evidence/timings/products-r1.timing.txt
+2026-10-29T21:27:39Z GET https://www.cynbit.in/products -> evidence/headers/products-r2.headers.txt evidence/html/products-r2.html evidence/timings/products-r2.timing.txt
+2026-10-29T21:27:41Z GET https://www.cynbit.in/products -> evidence/headers/products-r3.headers.txt evidence/html/products-r3.html evidence/timings/products-r3.timing.txt
+2026-10-29T21:27:44Z GET https://www.cynbit.in/bitelevate -> evidence/headers/bitelevate-r1.headers.txt evidence/html/bitelevate-r1.html evidence/timings/bitelevate-r1.timing.txt
+2026-10-29T21:27:46Z GET https://www.cynbit.in/bitelevate -> evidence/headers/bitelevate-r2.headers.txt evidence/html/bitelevate-r2.html evidence/timings/bitelevate-r2.timing.txt
+2026-10-29T21:27:49Z GET https://www.cynbit.in/bitelevate -> evidence/headers/bitelevate-r3.headers.txt evidence/html/bitelevate-r3.html evidence/timings/bitelevate-r3.timing.txt
+2026-10-29T21:27:52Z GET https://www.cynbit.in/robots.txt -> evidence/headers/robots_txt-r1.headers.txt evidence/html/robots_txt-r1.html evidence/timings/robots_txt-r1.timing.txt
+2026-10-29T21:27:54Z GET https://www.cynbit.in/robots.txt -> evidence/headers/robots_txt-r2.headers.txt evidence/html/robots_txt-r2.html evidence/timings/robots_txt-r2.timing.txt
+2026-10-29T21:27:56Z GET https://www.cynbit.in/robots.txt -> evidence/headers/robots_txt-r3.headers.txt evidence/html/robots_txt-r3.html evidence/timings/robots_txt-r3.timing.txt
+2026-10-29T21:28:00Z GET https://www.cynbit.in/sitemap.xml -> evidence/headers/sitemap_xml-r1.headers.txt evidence/html/sitemap_xml-r1.html evidence/timings/sitemap_xml-r1.timing.txt
+2026-10-29T21:28:03Z GET https://www.cynbit.in/sitemap.xml -> evidence/headers/sitemap_xml-r2.headers.txt evidence/html/sitemap_xml-r2.html evidence/timings/sitemap_xml-r2.timing.txt
+2026-10-29T21:28:06Z GET https://www.cynbit.in/sitemap.xml -> evidence/headers/sitemap_xml-r3.headers.txt evidence/html/sitemap_xml-r3.html evidence/timings/sitemap_xml-r3.timing.txt
+2026-10-29T21:28:09Z GET https://www.cynbit.in/this-page-does-not-exist-audit-404 -> evidence/headers/not-found-404.headers.txt evidence/html/not-found-404.html evidence/timings/not-found-404.timing.txt
+2026-10-29T21:28:12Z GET https://www.cynbit.in/.well-known/security.txt -> evidence/headers/security-txt.headers.txt
+2026-10-29T21:29:10Z GET https://www.cynbit.in/_next/static/chunks/app/(marketing)/contact/page-a581c8d7462124d9.js -> evidence/bundles/app__marketing__contact_page-a581c8d7462124d9_js
+2026-10-29T21:29:13Z GET https://www.cynbit.in/_next/static/chunks/app/(marketing)/products/page-637d1c81fb1ea500.js -> evidence/bundles/app__marketing__products_page-637d1c81fb1ea500_js
+2026-10-29T21:29:16Z GET https://www.cynbit.in/_next/static/chunks/app/(marketing)/bitelevate/page-e1cc18fdcf688572.js -> evidence/bundles/app__marketing__bitelevate_page-e1cc18fdcf688572_js

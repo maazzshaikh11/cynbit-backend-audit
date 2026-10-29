@@ -1,0 +1,12 @@
+url=https://www.cynbit.in/careers
+http_code=200
+http_version=1.1
+size_download=13503
+time_namelookup=0.000549
+time_connect=0.000823
+time_appconnect=0.080963
+time_pretransfer=0.081013
+time_starttransfer=0.651896
+time_total=0.709914
+num_redirects=0
+redirect_url=

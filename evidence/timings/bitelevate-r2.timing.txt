@@ -1,0 +1,12 @@
+url=https://www.cynbit.in/bitelevate
+http_code=200
+http_version=1.1
+size_download=24445
+time_namelookup=0.000488
+time_connect=0.000776
+time_appconnect=0.082217
+time_pretransfer=0.082272
+time_starttransfer=0.533099
+time_total=0.645316
+num_redirects=0
+redirect_url=

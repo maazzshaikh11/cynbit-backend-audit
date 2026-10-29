@@ -27,32 +27,30 @@ CHECKED = [
     "server",
     "x-powered-by",
     "content-encoding",
+    "access-control-allow-origin",
+    "x-vercel-cache",
+    "age",
+    "etag",
+    "vary",
+    "x-matched-path",
+    "x-nextjs-prerender",
 ]
 
 LEAKY = ("server", "x-powered-by", "x-aspnet-version", "x-generator")
 
 
 def parse_headers(path):
-    """Return (status_line, dict of lower-cased header -> [values]) for the last block."""
+    """Return (status_line, dict) for the LAST HTTP response block in a curl -D file."""
     with open(path, "r", errors="replace") as fh:
         text = fh.read()
-    # Split on blank lines; keep blocks that start with HTTP/
-    blocks = []
-    current = []
-    for line in text.splitlines():
-        if line.startswith("HTTP/") and current:
-            blocks.append(current)
-            current = [line]
-        else:
-            current.append(line)
-    if current:
-        blocks.append(current)
+    blocks = [b for b in text.split("\n\n") if b.startswith("HTTP/")]
     if not blocks:
         return "", {}
     last = blocks[-1]
-    status = last[0] if last else ""
+    lines = last.splitlines()
+    status = lines[0] if lines else ""
     headers = {}
-    for line in last[1:]:
+    for line in lines[1:]:
         if ":" in line:
             name, value = line.split(":", 1)
             headers.setdefault(name.strip().lower(), []).append(value.strip())
@@ -75,18 +73,13 @@ def main():
             if values:
                 present[name] += 1
                 shown = " | ".join(values)
-                # Never print a full cookie value: show flags only.
+                # Never print a cookie value: name + flags only.
                 if name == "set-cookie":
-                    shown = " ; ".join(
-                        "; ".join(p for p in v.split(";") if "=" not in p or p.split("=", 1)[0].strip().lower() in ("expires", "max-age", "path", "domain", "samesite", "secure", "httponly"))
-                        or "<cookie with value redacted>"
-                        for v in values
-                    )
-                    # Simpler, safer rendering: flags per cookie.
                     flags = []
                     for v in values:
                         parts = [p.strip() for p in v.split(";")]
-                        flags.append(", ".join(p for p in parts[1:]) or "(no flags)")
+                        cname = parts[0].split("=", 1)[0] if parts else "?"
+                        flags.append(f"{cname}=<redacted> ({', '.join(parts[1:]) or 'no flags'})")
                     shown = " || ".join(flags)
                 print(f"  {name}: {shown}")
             else:
