@@ -22,7 +22,7 @@ included only where it changes what the owners should check internally.
 | VAL-01 | Forms rely on visible client-side constraints only; server-side validation, rate limiting, and spam controls are unverifiable from outside | Medium | Confirmed (client side) / Hypothesis (server side) |
 | VAL-02 | PII collected on forms; third-party data sharing and consent are only partly visible | Low | Confirmed (fields) / Hypothesis (consent) |
 | PERF-01 | Slowest routes are the always-dynamic ones (`/careers`, `/sitemap.xml`) | Low | Confirmed |
-| PERF-02 | Cache policy is inconsistent and hard to reason about (`max-age=0` + ~8 h `Age`; careers never cached) | Low | Confirmed |
+| PERF-02 | Browser revalidates prerendered pages on every visit (normal Vercel default) | Info | Confirmed |
 | PERF-03 | BitElevate page is the heaviest: 220 KB HTML, oversized `next/image` widths | Low | Confirmed |
 | PERF-04 | Canonicalisation is inconsistent (no canonical on most pages; `og:url` uses apex, site redirects to `www`) | Low | Confirmed |
 | ERR-01 | 404 handling is correct in status but shares the same header gaps and a full-page payload | Info | Confirmed |
@@ -127,13 +127,14 @@ included only where it changes what the owners should check internally.
 - **Recommended fix:** Prerender `/careers` if its content is static (it appears to be a job list), or cache it at the edge with revalidation; generate `sitemap.xml` at build time or cache it for hours instead of per request (see `snippets/caching/`).
 - **Effort:** S–M.
 
-### PERF-02 — Cache policy is inconsistent and hard to reason about
+### PERF-02 — Browser revalidates prerendered pages on every visit (normal Vercel default)
 
-- **Severity:** Low — no stale-content incident is evidenced; the risk is that nobody can predict what is cached.
+- **Severity:** Info — this is expected platform behaviour, not a defect; the only cost is a revalidation round-trip per browser visit.
 - **Confidence:** Confirmed.
-- **Evidence:** Prerendered pages send `Cache-Control: public, max-age=0, must-revalidate` yet arrive with `X-Vercel-Cache: HIT` and `Age: ~29,600 s` (~8.2 h) on all repeats, plus `X-Nextjs-Stale-Time: 300`. `/careers` sends `private, no-cache, no-store`. `/robots.txt` went `MISS → HIT (Age 51) → HIT (Age 2974)`, suggesting different edge nodes or cache ages.
-- **Impact:** Operators cannot tell from the headers alone whether a content update reaches visitors in 5 minutes or 8 hours, and the `Age` value contradicts a naive reading of `max-age=0`.
-- **Recommended fix:** Document the intended caching per route type (static / prerendered / dynamic / sitemap) and set it explicitly — for example, immutable hashes for `/_next/static/*`, a stated revalidation interval for prerendered pages, and `no-store` only where content is genuinely per-user (see `snippets/caching/`).
+- **Evidence:** Prerendered pages send `Cache-Control: public, max-age=0, must-revalidate` and arrive with `X-Vercel-Cache: HIT` and `Age: ~29,600 s` (~8.2 h) on all repeats, plus `X-Nextjs-Stale-Time: 300` (`evidence/headers/home-r1.headers.txt`, and the same pattern for `/contact`, `/services`, `/products`, `/bitelevate`).
+- **Interpretation (corrected):** `max-age=0` tells the *browser* to revalidate on every visit, while Vercel's *edge* may still serve its own cached copy — hence `HIT` and a large edge `Age`. `Age` is an edge-cache age, not a browser-cache age, so the two values are not contradictory. An earlier draft of this report described this as an inconsistency; that was a misunderstanding of Vercel's default for prerendered Next.js pages, and it has been corrected here.
+- **Impact:** Each browser visit pays a revalidation round-trip (usually cheap, and served from the edge), but visitors get no browser-side caching of these pages. The always-`MISS` routes are a separate, real observation — see PERF-01, not this finding.
+- **Recommended fix:** Only if browser-side caching is wanted: set a positive `max-age` with `stale-while-revalidate` for prerendered pages (for example `public, max-age=60, stale-while-revalidate=300`), and document the intent per route type (see `snippets/caching/`). The trade-off is that browser-cached visitors see updates up to `max-age` later; do not make this change if immediate updates matter more than saved revalidations.
 - **Effort:** S.
 
 ### PERF-03 — BitElevate page is the heaviest

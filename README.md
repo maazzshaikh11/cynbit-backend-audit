@@ -47,7 +47,7 @@ canonicalisation explicit — all with tested code in `snippets/`.
 | VAL-01 | Forms show only `required` + `type=email` client-side; no `maxlength`, `pattern`, or `autocomplete`, and server-side validation / rate limiting / spam controls cannot be verified passively | Medium |
 | SEC-02 | All other hardening headers missing (nosniff, frame-ancestors, Referrer-Policy, Permissions-Policy, COOP/CORP) | Low |
 | PERF-01 | `/careers` and `/sitemap.xml` are `X-Vercel-Cache: MISS` on every repeat and have the slowest TTFB (up to 1.24 s and 1.82 s) | Low |
-| PERF-02 | Cache policy is inconsistent: prerendered pages send `max-age=0` yet arrive with `Age` ~8 h; `/careers` is never cached | Low |
+| PERF-03 | BitElevate is the heaviest page: ~220 KB HTML and student photos served at 3840 px wide via `next/image` | Low |
 
 Full findings, with evidence, impact, fix, and effort for each, are in
 `docs/03-findings.md`. The prioritised roadmap is in
@@ -75,6 +75,15 @@ Lighthouse was attempted but is **not available** in the environment
 used for this audit (managed Chrome refuses headless startup); no
 Lighthouse score is quoted anywhere in this repo. See `docs/01`.
 
+## Manual browser evidence — do this in your own Chrome before submitting
+
+Lighthouse (mobile + desktop, homepage only) and a HAR + cookie/storage
+summary take about 10 minutes in a normal desktop Chrome, with no clicks
+or form submissions. Full steps, file names, and redaction checks are in
+`docs/manual-browser-evidence-checklist.md`. Do not push until you have
+either added those files or decided to submit without them, with the
+limitation left in `docs/05` as it stands.
+
 ## Repository map
 
 ```text
@@ -86,6 +95,7 @@ docs/
   04-recommendations.md       Prioritised roadmap + target architecture
   05-limitations-and-ethics.md What passive testing cannot reveal
   submission-notes.md         Short text for the submission portal
+  manual-browser-evidence-checklist.md  Steps to add Lighthouse + HAR in your own Chrome (see below)
 scripts/
   passive_probe.sh            Rate-limited, read-only collector
   analyze_headers.py          Security-header scorecard from saved headers

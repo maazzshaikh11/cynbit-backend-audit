@@ -1,9 +1,14 @@
 // Cache-Control strategy by route type — addresses PERF-01, PERF-02.
-// Why explicit per-type values: today prerendered pages send
-// `max-age=0, must-revalidate` yet arrive with Age ~8 h, and /careers
-// sends `private, no-cache, no-store`, with no documented reason for
-// either. Stating the intent per route type makes the behaviour
-// reviewable and stops a future change from silently un-caching a page.
+// Why explicit per-type values: prerendered pages send
+// `max-age=0, must-revalidate` — Vercel's normal default, meaning the
+// browser revalidates on every visit while the edge may still serve its
+// cached copy (hence a large edge Age). That is not a contradiction.
+// Stating the intent per route type makes the behaviour reviewable and
+// stops a future change from silently un-caching a page.
+// If browser-side caching is wanted for prerendered pages, use e.g.
+// `public, max-age=60, stale-while-revalidate=300` instead of the
+// default below — accepting that browser-cached visitors see updates
+// up to max-age later.
 //
 // Next.js note: for App Router pages, prefer `revalidate` (ISR) or
 // route-segment config over hand-setting headers, and use these values

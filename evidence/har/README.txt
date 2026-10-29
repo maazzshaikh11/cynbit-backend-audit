@@ -1,2 +1,1 @@
-No HAR is included in this submission. See docs/05-limitations-and-ethics.md for why.
-This placeholder keeps the directory in git for a reviewer who re-runs a browser load.
+No HAR is included in this submission yet. See docs/05-limitations-and-ethics.md for why, and docs/manual-browser-evidence-checklist.md for how to capture one in your own Chrome (about 10 minutes, no clicks or form submissions).
