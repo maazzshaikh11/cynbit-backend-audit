@@ -1,0 +1,10 @@
+{
+  "description": "Recommended-improvement snippets for the Cynbit backend audit. No dependencies; run with Node >= 18.",
+  "name": "cynbit-audit-snippets",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/snippets.test.js"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}

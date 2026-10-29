@@ -30,3 +30,4 @@
 2026-10-29T21:29:10Z GET https://www.cynbit.in/_next/static/chunks/app/(marketing)/contact/page-a581c8d7462124d9.js -> evidence/bundles/app__marketing__contact_page-a581c8d7462124d9_js
 2026-10-29T21:29:13Z GET https://www.cynbit.in/_next/static/chunks/app/(marketing)/products/page-637d1c81fb1ea500.js -> evidence/bundles/app__marketing__products_page-637d1c81fb1ea500_js
 2026-10-29T21:29:16Z GET https://www.cynbit.in/_next/static/chunks/app/(marketing)/bitelevate/page-e1cc18fdcf688572.js -> evidence/bundles/app__marketing__bitelevate_page-e1cc18fdcf688572_js
+2026-10-29T21:31:55Z GET (TLS observation only) https://www.cynbit.in/ -> /tmp (not saved, verbose summary only)
