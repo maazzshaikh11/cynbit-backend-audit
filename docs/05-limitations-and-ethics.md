@@ -31,12 +31,25 @@
 
 ## Browser-load evidence: limited
 
-A normal homepage load was performed via the Muse browser (title
-confirmed: "Cynbit Technologies | AI Automation & Software Solutions
-Jaipur"), but the browser task's network/cookie/storage report was not
-returned before this report was finalised (the window state showed
-"failed" after loading). The direct headless-Chrome route was also
-unavailable in this VM (see §1, Lighthouse). Consequently:
+A normal homepage load was performed via the Muse browser. It
+confirmed the page title ("Cynbit Technologies | AI Automation &
+Software Solutions Jaipur") and that the homepage rendered normally,
+including the header and hero content. On re-observation, an automatic
+newsletter popup ("THE ARCHITECT'S DIGEST") appeared over a blurred
+homepage; it was not clicked or dismissed, as interaction was not
+authorised. That popup text does not appear in the server-rendered
+homepage HTML saved in `evidence/html/home-r1.html`, so it is
+client-rendered or time-delayed — a further data-collection surface
+that was not tested and is not assessed in `docs/03`.
+
+The browser task could not, however, provide a DevTools-style network
+log, cookie list, or storage-key list: the browser tools available for
+that task expose page title, content, and selected element URLs, but
+not request methods/statuses, cookie flags, or storage keys. The task
+therefore ended as "failed" for the HAR purpose, and no network,
+cookie, or storage entries have been invented to fill the gap. The
+direct headless-Chrome route was also unavailable in this VM (see §1,
+Lighthouse). Consequently:
 
 - No HAR file is included in `evidence/har/`. The directory is kept in
   the repo structure for a reviewer who re-runs a browser load.
