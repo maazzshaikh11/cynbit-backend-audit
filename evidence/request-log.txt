@@ -31,3 +31,11 @@
 2026-10-29T21:29:13Z GET https://www.cynbit.in/_next/static/chunks/app/(marketing)/products/page-637d1c81fb1ea500.js -> evidence/bundles/app__marketing__products_page-637d1c81fb1ea500_js
 2026-10-29T21:29:16Z GET https://www.cynbit.in/_next/static/chunks/app/(marketing)/bitelevate/page-e1cc18fdcf688572.js -> evidence/bundles/app__marketing__bitelevate_page-e1cc18fdcf688572_js
 2026-10-29T21:31:55Z GET (TLS observation only) https://www.cynbit.in/ -> /tmp (not saved, verbose summary only)
+(ts approx: ~9s before measured) GET (Lighthouse mobile run 1, warmup) https://www.cynbit.in/ -> superseded run (PROTOCOL_TIMEOUT on ResponseCompression; JSON not committed)
+2026-10-30T16:06:39Z GET (Lighthouse mobile run 1, measured) https://www.cynbit.in/ -> superseded run (JSON not committed)
+(ts approx: ~9s before measured) GET (Lighthouse mobile run 2, warmup) https://www.cynbit.in/ -> evidence/lighthouse/mobile-home.json
+2026-10-30T16:12:56Z GET (Lighthouse mobile run 2, measured) https://www.cynbit.in/ -> evidence/lighthouse/mobile-home.json
+(ts approx: ~9s before measured) GET (Lighthouse desktop, warmup, home) https://www.cynbit.in/ -> evidence/lighthouse/desktop-home.json
+2026-10-30T16:16:07Z GET (Lighthouse desktop, measured, home) https://www.cynbit.in/ -> evidence/lighthouse/desktop-home.json
+(ts approx: ~9s before measured) GET (Lighthouse desktop, warmup, careers) https://www.cynbit.in/careers -> evidence/lighthouse/desktop-careers.json
+2026-10-30T16:20:26Z GET (Lighthouse desktop, measured, careers) https://www.cynbit.in/careers -> evidence/lighthouse/desktop-careers.json
