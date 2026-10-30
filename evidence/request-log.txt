@@ -39,3 +39,4 @@
 2026-10-30T16:16:07Z GET (Lighthouse desktop, measured, home) https://www.cynbit.in/ -> evidence/lighthouse/desktop-home.json
 (ts approx: ~9s before measured) GET (Lighthouse desktop, warmup, careers) https://www.cynbit.in/careers -> evidence/lighthouse/desktop-careers.json
 2026-10-30T16:20:26Z GET (Lighthouse desktop, measured, careers) https://www.cynbit.in/careers -> evidence/lighthouse/desktop-careers.json
+2026-10-30T16:26:28Z GET (browser load via headless Chrome/CDP, one navigation, no interaction) https://www.cynbit.in/ -> evidence/har/homepage.har evidence/har/homepage-network-summary.md (54 subrequests incl. 13 App Router RSC prefetches; not separately counted as page loads)
