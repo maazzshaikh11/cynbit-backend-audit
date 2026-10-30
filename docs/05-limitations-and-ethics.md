@@ -29,38 +29,62 @@
   linked pages rest on sitemap/HTML listings, not on direct observation
   of those pages.
 
-## Browser-load evidence: limited
+## Browser-load evidence: what it now covers
 
-A normal homepage load was performed via the Muse browser. It
-confirmed the page title ("Cynbit Technologies | AI Automation &
-Software Solutions Jaipur") and that the homepage rendered normally,
-including the header and hero content. On re-observation, an automatic
-newsletter popup ("THE ARCHITECT'S DIGEST") appeared over a blurred
-homepage; it was not clicked or dismissed, as interaction was not
-authorised. That popup text does not appear in the server-rendered
-homepage HTML saved in `evidence/html/home-r1.html`, so it is
-client-rendered or time-delayed — a further data-collection surface
-that was not tested and is not assessed in `docs/03`.
+Two kinds of browser evidence exist in this repo, both collected
+**passively** — no clicks, no scrolling, no form interaction, popup
+untouched.
 
-The browser task could not, however, provide a DevTools-style network
-log, cookie list, or storage-key list: the browser tools available for
-that task expose page title, content, and selected element URLs, but
-not request methods/statuses, cookie flags, or storage keys. The task
-therefore ended as "failed" for the HAR purpose, and no network,
-cookie, or storage entries have been invented to fill the gap. The
-direct headless-Chrome route was also unavailable in this VM (see §1,
-Lighthouse). Consequently:
+**1. Network capture (`evidence/har/`).** One homepage load through
+headless Chrome over the Chrome DevTools Protocol, from a fresh empty
+profile, recorded 54 requests as a redacted HAR plus a structured
+summary. It confirms at runtime what the curl pass showed (no CSP, no
+other hardening headers, `max-age=0` + edge `Age`) and adds what curl
+could not see: which third parties are actually contacted (`gtag`,
+`analytics.google.com`, DoubleClick, `google.co.in/ads/ga-audiences`, two
+Google Fonts hosts), that two `_ga*` cookies are written client-side with
+no `Secure`, `HttpOnly` or explicit `SameSite` flag, that the only
+`localStorage` key is `cynbit_newsletter_seen`, and that no `/api/`,
+Server Action, or admin/portal request fires during a normal visit.
 
-- No HAR file is included in `evidence/har/`. The directory is kept in
-  the repo structure for a reviewer who re-runs a browser load.
-- No claim is made in this report about cookies set by a browser load,
-  localStorage keys, or XHR calls during a browser load. The only network
-  claims are from curl (headers/HTML/timings) and from static bundle
-  analysis, both saved in `evidence/`.
-- If a reviewer re-runs a browser load and finds an XHR/API call that
-  contradicts §2.2 ("no public API observed"), §2.2 and ARCH-02 should be
-  corrected — the static-analysis claim is about the bundles analysed,
-  not about every possible runtime request.
+**2. Lighthouse (`evidence/lighthouse/`).** Mobile and desktop runs on
+the homepage plus a desktop run on `/careers`, raw JSON committed,
+summarised with device settings and a "scores vary between runs" note.
+
+**Earlier observation kept for completeness:** an earlier passive browser
+session saw the page title and hero render normally, and then an
+automatic newsletter popup ("THE ARCHITECT'S DIGEST") appear over a
+blurred homepage. It was **not** clicked or dismissed, since interaction
+was not authorised. That popup text does not appear in the
+server-rendered homepage HTML (`evidence/html/home-r1.html`), so it is
+client-rendered or time-delayed — a further data-collection surface that
+was never exercised and is not assessed in `docs/03`. The HAR capture's
+`cynbit_newsletter_seen` localStorage key independently confirms that
+this component runs on load.
+
+What neither capture can show, and what no claim is made about:
+
+- **Consent.** No consent banner or CMP was found in the server HTML and
+  none appeared during the 12-second capture. Whether one renders later,
+  is region-gated, or does not exist is **not** established — this is
+  recorded as Hypothesis in VAL-02, not as "the site has no consent
+  mechanism".
+- **The newsletter popup's behaviour.** Its existence is evidenced by the
+  `cynbit_newsletter_seen` key and by an earlier observation of the popup
+  itself; it was never clicked or dismissed, so its submission flow was
+  never exercised.
+- **TLS version, cipher, HTTP/3.** The CDP `Security` domain was not
+  enabled. Only `h2` negotiation and the absence of `Alt-Svc` are claimed
+  (§1).
+- **Anything post-interaction or authenticated** — including the intern
+  portal, form error handling, and what a Server Action returns.
+- **Repeatability.** One load only, so the HAR says nothing about cache
+  behaviour across loads; cache claims rest on the three-repeat curl set.
+
+Earlier drafts of this report stated that no HAR and no Lighthouse data
+were available in the audit environment. That was true then and is now
+superseded by the two artifacts above; every document in this repo has
+been updated to match.
 
 ## Ethics and handling of findings
 

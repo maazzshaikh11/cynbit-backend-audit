@@ -13,9 +13,10 @@ server code, which passive testing cannot see.
 | Framework | `/_next/static/...` chunk URLs in every page; RSC `Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch`; `self.__next_f` payloads in HTML; `X-Powered-By: Next.js` on `/careers` only |
 | Rendering | Most pages carry `X-Nextjs-Prerender: 1` and `X-Nextjs-Stale-Time: 300` — prerendered pages with a 300 s client-router stale time |
 | Routing | Chunk path `app/(marketing)/...` in page bundles — a Next.js App Router `(marketing)` route group |
-| Analytics | `googletagmanager.com/gtag/js` preload in every page; a `GoogleAnalytics` component in the layout chunk (see `evidence/html/home-r1.html`) |
+| Analytics | `googletagmanager.com/gtag/js` preload in every page; a `GoogleAnalytics` component in the layout chunk (see `evidence/html/home-r1.html`). Runtime-confirmed: the recorded browser load contacted `analytics.google.com`, `stats.g.doubleclick.net` and `www.google.co.in/ads/ga-audiences`, and wrote two `_ga*` cookies |
 | Fonts | `fonts.googleapis.com` stylesheet (Material Symbols) plus two self-hosted `/_next/static/media/*.woff2` fonts |
 | Payments (BitElevate only) | `https://sdk.cashfree.com/js/v3/cashfree.js` loaded dynamically by the BitElevate page bundle; Server Actions `createBitelevateCashfreeOrder` and `verifyBitelevatePayment` |
+| Protocol (browser-observed) | Chrome negotiated `h2` for all 54 requests of the recorded homepage load; the origin sent no `Alt-Svc` header, so HTTP/3 was not offered (third-party Google endpoints did offer `h3`). TLS version not observed — see §1 |
 | Structured data | JSON-LD `ProfessionalService` on every page, plus `ContactPage`, `FAQPage`, `SoftwareApplication`, `BreadcrumbList` on individual pages |
 
 ## 2.2 Observed API surface: Server Actions, not REST
@@ -65,22 +66,26 @@ flowchart LR
         E[Vercel edge cache]
         N[Next.js App Router\nmarketing route group]
         SA[Server Actions\nsubmitInquiry / submitServiceLead\ncreateBitelevateCashfreeOrder\nverifyBitelevatePayment]
+        GA[Google Analytics\ngtag.js + g/collect + DoubleClick]
     end
     subgraph Inferred["Inferred — not observed"]
         DB[(Unknown store /\nCRM / email)]
         CF[Cashfree payment gateway]
-        GA[Google Analytics]
     end
     V --> E --> N --> SA
     SA -.-> DB
     SA -.-> CF
-    V -.-> GA
+    V --> GA
     V -.-> CF
 ```
 
 Inferred items are marked with dashed arrows. In particular, where form
 submissions are stored (database, CRM, email inbox, or spreadsheet) is
-**unknown** from passive evidence, and no datastore is claimed.
+**unknown** from passive evidence, and no datastore is claimed. Google
+Analytics moved into the observed group only after the browser capture in
+`evidence/har/` recorded the actual `g/collect` requests on load; what
+happens to the data *after* it reaches Google — retention, consent
+scope, and any audience sharing — remains inferred (VAL-02).
 
 ## 2.5 Observed timings and sizes
 
@@ -113,10 +118,34 @@ no total-JS figure is claimed.
 
 ## 2.6 Third parties observed in a normal page
 
-From `evidence/html-inventory.txt` (HTML only, before any browser
+**From HTML only** (`evidence/html-inventory.txt`, before any browser
 interaction): Google Tag Manager / Analytics, Google Fonts, and social
 links (LinkedIn, Instagram, Facebook, X). From the BitElevate bundle only:
 Cashfree SDK and a GitHub link. No CRM, lead-gen widget, chat widget,
 captcha provider, or other form backend is visible in the HTML or in the
-three page bundles. Absence in these files is not proof of absence on
-other pages or after interaction.
+three page bundles.
+
+**From an actual browser load** (`evidence/har/homepage-network-summary.md`,
+one passive homepage load, 54 requests): 48 requests to
+`www.cynbit.in` and **6 to third parties** —
+`fonts.gstatic.com` (1.11 MB icon font), `www.googletagmanager.com`
+(199 KB `gtag/js`), `fonts.googleapis.com` (Material Symbols CSS),
+`analytics.google.com` (`g/collect` POST), `stats.g.doubleclick.net`
+(`g/collect` POST) and `www.google.co.in/ads/ga-audiences` (pixel GET).
+The two POSTs and the pixel fired **with zero user interaction** during
+page load. Third parties account for ~77% of transferred bytes on that
+load.
+
+Two corrections this evidence forces on the HTML-only view:
+
+- **`analytics.google.com` and DoubleClick were not visible in the HTML**
+  — they are contacted at runtime by the GTM container. Any statement
+  that "only GTM/Fonts are loaded" was true of the markup and false of
+  the page; the runtime view is now the one quoted in `docs/03` (VAL-02).
+- **No `/api/`, Server Action, or `fetch` to a Cynbit backend endpoint
+  occurred** during that load; the only POSTs were the two Google
+  analytics hits. This supports §2.2 and ARCH-02 at runtime rather than
+  by static analysis alone.
+
+Absence in these files is not proof of absence on other pages or after
+interaction; this remains one load of one page.
