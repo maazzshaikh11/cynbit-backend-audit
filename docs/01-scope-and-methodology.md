@@ -90,8 +90,10 @@ npx lighthouse@12 https://www.cynbit.in/ --output=json \
 
 ## Redaction applied to evidence
 
-Saved evidence was redacted **before committing** so the public repository
-contains no contact details or request identifiers:
+The evidence files, in their current state, were redacted **before the
+commits that added that content**, so the repository's present tree contains
+no contact details or request identifiers (earlier commits in this repo's
+history predate parts of the redaction pass):
 
 - Email addresses in saved HTML/bundles replaced with `<redacted-email>`.
 - Telephone numbers in saved HTML and structured data replaced with

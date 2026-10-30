@@ -37,7 +37,8 @@ explicit — all with tested code in `snippets/`.
   Action observed in a bundle. No click, scroll, or popup dismissal in
   the browser capture either.
 - **Redaction:** public contact details, cookie/client values, and
-  Vercel request IDs in saved evidence were redacted before committing.
+  Vercel request IDs in the current files of this repository were
+  redacted before committing.
   No secret or credential-like string was found in any bundle analysed.
 - Full methodology, including the TLS limitations of this environment
   and what the browser/Lighthouse captures can and cannot show, is in
