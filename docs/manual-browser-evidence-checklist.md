@@ -9,7 +9,7 @@ popup untouched:
 | Evidence | Files | What it shows |
 |---|---|---|
 | Lighthouse (12.8.2, Chrome 156) | `evidence/lighthouse/mobile-home.json`, `desktop-home.json`, `desktop-careers.json`, `summary.md` | Scores, Core Web Vitals, device settings, top opportunities |
-| One browser load via CDP | `evidence/har/homepage.har`, `homepage-network-summary.md`, `README.txt` | 54 requests, headers, third parties, cookie flags, storage key names |
+| One browser load via CDP | `evidence/har/homepage.har`, `evidence/har/homepage-network-summary.md`, `evidence/har/README.txt` | 54 requests, headers, third parties, cookie flags, storage key names |
 
 This file is kept for reviewers who want to reproduce or double-check
 either capture. Everything below is optional verification, not a missing
@@ -69,10 +69,11 @@ the same pass:
 - Your own name, email, or machine paths if they appear (e.g. a HAR
   `creator` block).
 
-Quick check from the repo root:
+Quick check from the repo root (substitute the local part of any address
+you are checking for; both must print nothing):
 
 ```bash
-grep -riE "muazshaikh7861|@gmail\.com" evidence/lighthouse/ evidence/har/ || echo "no personal email in new evidence"
+grep -riE "<personal-email-local-part>|@gmail\.com" evidence/lighthouse/ evidence/har/ || echo "no personal email in new evidence"
 grep -oE "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" evidence/lighthouse/*.json evidence/har/*.har | grep -v redacted || echo "no real emails in new evidence"
 ```
 

@@ -78,7 +78,7 @@ test("BitElevate accepts a real track/duration and rejects an invented track", (
   assert.equal(good.ok, true);
   const bad = validateBitElevate({
     fullName: "Aarav", university: "SKIT", email: "aarav@example.com",
-    phone: "9876543210", track: "Quantum", duration: "60-Day Standard Sprint (8 Weeks)",
+    phone: "+91 98765 43210", track: "Quantum", duration: "60-Day Standard Sprint (8 Weeks)",
     ambitions: "I want to build AI products and learn backend engineering.",
   });
   assert.equal(bad.ok, false);
